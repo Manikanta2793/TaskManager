@@ -11,8 +11,9 @@ dotenv.config(); //loads env vars
 const app = express();
 
 app.use(cors({
-    origin:'http://localhost:5173',
-    Credentials:true
+    origin:['http://localhost:5173','https://taskmanager-1-xx5d.onrender.com'],
+    credentials:true
+    
 }));
 
 app.use(express.json());
